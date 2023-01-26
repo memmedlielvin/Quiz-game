@@ -73,6 +73,14 @@
       "secenekC": "Rövşən",
       "secenekD": "Elçin",
       "cevap": "secenekD"
+    },
+    {
+      "soru": "Rauf haralıdır?",
+      "secenekA": "Agdam",
+      "secenekB": "Ağdaş",
+      "secenekC": "Masallı",
+      "secenekD": "Şamaxı",
+      "cevap": "secenekA"
     }
   ]
 }
