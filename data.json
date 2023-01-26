@@ -1,0 +1,46 @@
+{
+  "sorular": [
+    {
+      "soru": "Osmanlı torunlarının daimi məkanı hansıdır?",
+      "secenekA": "Golden",
+      "secenekB": "Bizans",
+      "secenekC": "50 Qəpik",
+      "secenekD": "Şirin Çay",
+      "cevap": "secenekA"
+    },
+    {
+      "soru": "Şahların ən çox sevdiyi oyun?",
+      "secenekA": "Nərd",
+      "secenekB": "Playstation",
+      "secenekC": "Damino",
+      "secenekD": "Okey",
+      "cevap": "secenekC"
+    },
+
+    {
+      "soru": "Rövşən damino oynayarkən əlində hansı daşın qoşasını öldürmüşdür.",
+      "secenekA": "Altı qoşa",
+      "secenekB": "İki qoşa",
+      "secenekC": "Ağ qoşa",
+      "secenekD": "Dörd qoşa",
+      "cevap": "secenekC"
+    },
+
+    {
+      "soru": "Aşağıdakılardan hansı Elçin imranlıya məxsusdur?",
+      "secenekA": "Hündürboy olmaq",
+      "secenekB": "Fit olmaq",
+      "secenekC": "Liliput olmaq",
+      "secenekD": "Uzun saçlı olmaq",
+      "cevap": "secenekC"
+    },
+    {
+      "soru": "Sahlar damino oynayarkən ən çox işlətdiyi söz?",
+      "secenekA": "Oyna görək",
+      "secenekB": "Ayə öyün tiyilsin",
+      "secenekC": "Qazlıyacıyıq",
+      "secenekD": "Sxoy verək",
+      "cevap": "secenekB"
+    }
+  ]
+}
