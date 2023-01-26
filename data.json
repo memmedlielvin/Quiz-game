@@ -41,6 +41,38 @@
       "secenekC": "Qazlıyacıyıq",
       "secenekD": "Sxoy verək",
       "cevap": "secenekB"
+    },
+    {
+      "soru": "Rauf ne satir?",
+      "secenekA": "Ayaqqabi",
+      "secenekB": "Meyvə-tərəvəz",
+      "secenekC": "Beton",
+      "secenekD": "Masin",
+      "cevap": "secenekC"
+    },
+    {
+      "soru": "Elçin əvvəl nə işlə məşğul olub?",
+      "secenekA": "Maklerlik edib",
+      "secenekB": "Satıcı",
+      "secenekC": "Şobə müdürü",
+      "secenekD": "Fəhlə",
+      "cevap": "secenekA"
+    },
+    {
+      "soru": "Rövşən haralıdır?",
+      "secenekA": "Ağdaş",
+      "secenekB": "Yeraz",
+      "secenekC": "Lənkəran",
+      "secenekD": "Bakı",
+      "cevap": "secenekB"
+    },
+    {
+      "soru": "Alikin yola getmədiyi dostu?",
+      "secenekA": "Sahlar",
+      "secenekB": "Rauf",
+      "secenekC": "Rövşən",
+      "secenekD": "Elçin",
+      "cevap": "secenekB"
     }
   ]
 }
