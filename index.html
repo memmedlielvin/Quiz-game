@@ -8,38 +8,38 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   </head>
   <body>
-    <div id="sinav">
-      <div id="soruAlani">
-        <h4 id="soru"></h4>
+    <div id="container">
+      <div id="questionContainer">
+        <h4 id="questions"></h4>
 
         <ul>
           <li>
-            <input type="radio" name="secenek" id="secenekA" />
-            <label for="secenekA" id="aciklamaA"></label>
+            <input type="radio" name="versions" id="versionA" />
+            <label for="versionA" class="versionA"></label>
           </li>
 
           <li>
-            <input type="radio" name="secenek" id="secenekB" />
-            <label for="secenekB" id="aciklamaB"></label>
+            <input type="radio" name="versions" id="versionB" />
+            <label for="versionB" class="versionB"></label>
           </li>
 
           <li>
-            <input type="radio" name="secenek" id="secenekC" />
-            <label for="secenekC" id="aciklamaC"></label>
+            <input type="radio" name="versions" id="versionC" />
+            <label for="versionC" class="versionC"></label>
           </li>
 
           <li>
-            <input type="radio" name="secenek" id="secenekD" />
-            <label for="secenekD" id="aciklamaD"></label>
+            <input type="radio" name="versions" id="versionD" />
+            <label for="versionD" class="versionD"></label>
           </li>
         </ul>
       </div>
 
       <div>
         <button id="btn" onclick="qebulEt();">Qebul Et</button>
-        <a id="btnRestart" href="index.html">Yeniden Basla</a>
       </div>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>

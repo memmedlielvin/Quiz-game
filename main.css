@@ -17,7 +17,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  #soruAlani {
+  #questionContainer {
     width: 400px;
     background-color: rgb(207, 161, 101);
     box-shadow: 0 0 5px rgb(151, 92, 14);
@@ -44,7 +44,7 @@ body {
   }
 
   #btn,
-  #btnRestart {
+  .restartGameBtn {
     width: 400px;
     display: block;
     text-align: center;
@@ -58,13 +58,60 @@ body {
     cursor: pointer;
   }
 
-  #btnRestart {
-    display: none;
+  .restartGameBtn {
+    margin-top: 3rem;
+  }
+  .infoTotal {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(243, 215, 178);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .infoTotalWarning {
+    text-align: center;
+  }
+  .infoTotalText {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .closeInfo {
+    float: right;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    background-color: burlywood;
+    margin-top: 1rem;
+  }
+
+  .resultInfo {
+    width: 400px;
+    padding-top: 20px;
+    background-color: rgb(207, 161, 101);
+    box-shadow: 0 0 5px rgb(151, 92, 14);
+
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .restartGameWarning {
+    text-align: center;
+  }
+  .restartGameText {
+    margin-top: 1rem;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #soruAlani {
+  #questionContainer {
     width: 300px;
     background-color: rgb(207, 161, 101);
     box-shadow: 0 0 10px rgb(151, 92, 14);
@@ -91,7 +138,7 @@ body {
   }
 
   #btn,
-  #btnRestart {
+  .restartGameBtn {
     width: 300px;
     display: block;
     text-align: center;
@@ -104,8 +151,54 @@ body {
     box-shadow: 0 0 5px rgb(151, 92, 14);
     cursor: pointer;
   }
+  .restartGameBtn {
+    margin-top: 1rem;
+  }
+  .infoTotal {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(243, 215, 178);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-  #btnRestart {
-    display: none;
+  .infoTotalWarning {
+    text-align: center;
+  }
+  .infoTotalText {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .closeInfo {
+    float: right;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    background-color: burlywood;
+    margin-top: 1rem;
+  }
+
+  .resultInfo {
+    width: 300px;
+    padding-top: 20px;
+    background-color: rgb(207, 161, 101);
+    box-shadow: 0 0 5px rgb(151, 92, 14);
+
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .restartGameWarning {
+    text-align: center;
+  }
+  .restartGameText {
+    margin-top: 1rem;
+    text-align: center;
   }
 }

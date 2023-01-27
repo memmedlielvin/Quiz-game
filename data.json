@@ -1,86 +1,86 @@
 {
-  "sorular": [
+  "questionsArray": [
     {
-      "soru": "Osmanlı torunlarının daimi məkanı hansıdır?",
-      "secenekA": "Golden",
-      "secenekB": "Bizans",
-      "secenekC": "50 Qəpik",
-      "secenekD": "Şirin Çay",
-      "cevap": "secenekA"
+      "question": "Osmanlı torunlarının daimi məkanı hansıdır?",
+      "answerA": "Golden",
+      "answerB": "Bizans",
+      "answerC": "50 Qəpik",
+      "answerD": "Şirin Çay",
+      "answer": "Golden"
     },
     {
-      "soru": "Şahların ən çox sevdiyi oyun?",
-      "secenekA": "Nərd",
-      "secenekB": "Playstation",
-      "secenekC": "Damino",
-      "secenekD": "Okey",
-      "cevap": "secenekC"
-    },
-
-    {
-      "soru": "Rövşən damino oynayarkən əlində hansı daşın qoşasını öldürmüşdür.",
-      "secenekA": "Altı qoşa",
-      "secenekB": "İki qoşa",
-      "secenekC": "Ağ qoşa",
-      "secenekD": "Dörd qoşa",
-      "cevap": "secenekC"
+      "question": "Şahların ən çox sevdiyi oyun?",
+      "answerA": "Nərd",
+      "answerB": "Playstation",
+      "answerC": "Damino",
+      "answerD": "Okey",
+      "answer": "Damino"
     },
 
     {
-      "soru": "Aşağıdakılardan hansı Elçin imranlıya məxsusdur?",
-      "secenekA": "Hündürboy olmaq",
-      "secenekB": "Fit olmaq",
-      "secenekC": "Liliput olmaq",
-      "secenekD": "Uzun saçlı olmaq",
-      "cevap": "secenekC"
+      "question": "Rövşən damino oynayarkən əlində hansı daşın qoşasını öldürmüşdür.",
+      "answerA": "Altı qoşa",
+      "answerB": "İki qoşa",
+      "answerC": "Ağ qoşa",
+      "answerD": "Dörd qoşa",
+      "answer": "Ağ qoşa"
+    },
+
+    {
+      "question": "Aşağıdakılardan hansı Elçin imranlıya məxsusdur?",
+      "answerA": "Hündürboy olmaq",
+      "answerB": "Fit olmaq",
+      "answerC": "Liliput olmaq",
+      "answerD": "Uzun saçlı olmaq",
+      "answer": "Liliput olmaq"
     },
     {
-      "soru": "Sahlar damino oynayarkən ən çox işlətdiyi söz?",
-      "secenekA": "Oyna görək",
-      "secenekB": "Ayə öyün tiyilsin",
-      "secenekC": "Qazlıyacıyıq",
-      "secenekD": "Sxoy verək",
-      "cevap": "secenekB"
+      "question": "Sahlar damino oynayarkən ən çox işlətdiyi söz?",
+      "answerA": "Oyna görək",
+      "answerB": "Ayə öyün tiyilsin",
+      "answerC": "Qazlıyacıyıq",
+      "answerD": "Sxoy verək",
+      "answer": "Ayə öyün tiyilsin"
     },
     {
-      "soru": "Rauf ne satir?",
-      "secenekA": "Ayaqqabi",
-      "secenekB": "Meyvə-tərəvəz",
-      "secenekC": "Beton",
-      "secenekD": "Masin",
-      "cevap": "secenekC"
+      "question": "Rauf ne satir?",
+      "answerA": "Ayaqqabi",
+      "answerB": "Meyvə-tərəvəz",
+      "answerC": "Beton",
+      "answerD": "Masin",
+      "answer": "Beton"
     },
     {
-      "soru": "Elçin əvvəl nə işlə məşğul olub?",
-      "secenekA": "Maklerlik edib",
-      "secenekB": "Satıcı",
-      "secenekC": "Şobə müdürü",
-      "secenekD": "Fəhlə",
-      "cevap": "secenekA"
+      "question": "Elçin əvvəl nə işlə məşğul olub?",
+      "answerA": "Maklerlik edib",
+      "answerB": "Satıcı",
+      "answerC": "Şobə müdürü",
+      "answerD": "Fəhlə",
+      "answer": "Maklerlik edib"
     },
     {
-      "soru": "Rövşən haralıdır?",
-      "secenekA": "Ağdaş",
-      "secenekB": "Yeraz",
-      "secenekC": "Lənkəran",
-      "secenekD": "Bakı",
-      "cevap": "secenekB"
+      "question": "Rövşən haralıdır?",
+      "answerA": "Ağdaş",
+      "answerB": "Yeraz",
+      "answerC": "Lənkəran",
+      "answerD": "Bakı",
+      "answer": "Yeraz"
     },
     {
-      "soru": "Alikin yola getmədiyi dostu?",
-      "secenekA": "Sahlar",
-      "secenekB": "Rauf",
-      "secenekC": "Rövşən",
-      "secenekD": "Elçin",
-      "cevap": "secenekD"
+      "question": "Alikin yola getmədiyi dostu?",
+      "answerA": "Sahlar",
+      "answerB": "Rauf",
+      "answerC": "Rövşən",
+      "answerD": "Elçin",
+      "answer": "Elçin"
     },
     {
-      "soru": "Rauf haralıdır?",
-      "secenekA": "Ağdam",
-      "secenekB": "Ağdaş",
-      "secenekC": "Masallı",
-      "secenekD": "Şamaxı",
-      "cevap": "secenekA"
+      "question": "Rauf haralıdır?",
+      "answerA": "Ağdam",
+      "answerB": "Ağdaş",
+      "answerC": "Masallı",
+      "answerD": "Şamaxı",
+      "answer": "Ağdam"
     }
   ]
 }

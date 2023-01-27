@@ -1,72 +1,131 @@
-var baglanti = new XMLHttpRequest();
-var jsondanGelen;
-const soruAlani = document.querySelector("#soruAlani");
-const soru = document.querySelector("#soru");
-const secenekler = document.getElementsByName("secenek");
 
-const aciklamaA = document.querySelector("#aciklamaA");
-const aciklamaB = document.querySelector("#aciklamaB");
-const aciklamaC = document.querySelector("#aciklamaC");
-const aciklamaD = document.querySelector("#aciklamaD");
-const btn = document.querySelector("#btn");
+var xhttp = new XMLHttpRequest();
+var dataFromJson;
 
-let puan = 0;
-let sira = 0;
-
-baglanti.onreadystatechange = function () {
+xhttp.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
-    jsondanGelen = JSON.parse(this.responseText);
-    soruGetir();
+    dataFromJson = JSON.parse(this.responseText);
+    getQuestions();
   }
-  return jsondanGelen;
 };
 
-baglanti.open("get", "data.json", true);
-baglanti.send();
+xhttp.open("get", "data.json", true);
+xhttp.send();
 
-function soruGetir() {
-  secimiTemizle();
+const container = document.querySelector("#container");
+const questions = document.querySelector("#questions");
+const versionA = document.querySelector(".versionA");
+const versionB = document.querySelector(".versionB");
+const versionC = document.querySelector(".versionC");
+const versionD = document.querySelector(".versionD");
+const versions = document.getElementsByName("versions");
+var body = document.querySelector("body");
+var numberOfQuestions = 0;
+var pointTrue = 0;
+var pointFalse = 0;
 
-  let siradakiSoru = jsondanGelen.sorular[sira];
-
-  soru.innerHTML = siradakiSoru.soru;
-  aciklamaA.innerHTML = siradakiSoru.secenekA;
-  aciklamaB.innerHTML = siradakiSoru.secenekB;
-  aciklamaC.innerHTML = siradakiSoru.secenekC;
-  aciklamaD.innerHTML = siradakiSoru.secenekD;
-}
-
-function secimiTemizle() {
-  secenekler.forEach(function (item) {
-    item.checked = false;
-  });
-}
-
-function secimiAl() {
-  let secim;
-  secenekler.forEach(function (item) {
-    if (item.checked == true) {
-      secim = item.id;
-    }
-  });
-  return secim;
+function getQuestions() {
+  questions.innerHTML = dataFromJson.questionsArray[numberOfQuestions].question;
+  versionA.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerA;
+  versionB.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerB;
+  versionC.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerC;
+  versionD.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerD;
 }
 
 function qebulEt() {
-  let secilen = secimiAl();
+  versions.forEach(function (item) {
+    questions.innerHTML = dataFromJson.questionsArray[numberOfQuestions].question;
+    versionA.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerA;
+    versionB.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerB;
+    versionC.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerC;
+    versionD.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerD;
 
-  if (secilen === jsondanGelen.sorular[sira].cevap) {
-    puan++;
-    sira++;
-  } else {
-    alert("Cavab Yanlışdır");
-  }
+    if (item.checked == true) {
+      if (item.nextElementSibling.innerHTML == dataFromJson.questionsArray[numberOfQuestions].answer) {
+        numberOfQuestions++;
+        pointTrue++;
+        item.checked = false;
 
-  if (sira < jsondanGelen.sorular.length) {
-    soruGetir();
-  } else {
-    soruAlani.innerHTML = `Doğru cavabların sayı. ${puan} / ${jsondanGelen.sorular.length} . `;
-    btn.style.display = "none";
-    document.querySelector("#btnRestart").style.display = "block";
-  }
+        container.style.filter = "blur(10px)";
+        var body = document.querySelector("body");
+        var infoTotal = document.createElement("div");
+        infoTotal.classList.add("infoTotal");
+        body.appendChild(infoTotal);
+        var textInfo = document.createElement("div");
+        var closeInfo = document.createElement("button");
+        closeInfo.classList.add("closeInfo");
+        infoTotal.appendChild(textInfo);
+        infoTotal.appendChild(closeInfo);
+        var infoTotalWarning = document.createElement("h2");
+        var infoTotalText = document.createElement("p");
+        textInfo.appendChild(infoTotalWarning);
+        textInfo.appendChild(infoTotalText);
+
+        infoTotalWarning.innerHTML = `Təbriklər!`;
+        infoTotalText.innerHTML = `Doğru cavabların sayı ${pointTrue}`;
+
+        closeInfo.innerHTML = "Close";
+        closeInfo.addEventListener("click", function () {
+          infoTotal.style.display = "none";
+          container.style.filter = "blur(0)";
+        });
+      } else {
+        numberOfQuestions++;
+        pointFalse++;
+        item.checked = false;
+        container.style.filter = "blur(10px)";
+        var body = document.querySelector("body");
+        var infoTotal = document.createElement("div");
+        infoTotal.classList.add("infoTotal");
+        body.appendChild(infoTotal);
+        var textInfo = document.createElement("div");
+        var closeInfo = document.createElement("button");
+        closeInfo.classList.add("closeInfo");
+        infoTotal.appendChild(textInfo);
+        infoTotal.appendChild(closeInfo);
+        var infoTotalWarning = document.createElement("h2");
+        var infoTotalText = document.createElement("p");
+        textInfo.appendChild(infoTotalWarning);
+        textInfo.appendChild(infoTotalText);
+
+        infoTotalWarning.innerHTML = `Təəssüf!`;
+        infoTotalText.innerHTML = `Yanlış cavabların sayı ${pointFalse}`;
+
+        closeInfo.innerHTML = "Close";
+        closeInfo.addEventListener("click", function () {
+          infoTotal.style.display = "none";
+          container.style.filter = "blur(0)";
+        });
+      }
+
+      if (numberOfQuestions < dataFromJson.questionsArray.length) {
+        questions.innerHTML = dataFromJson.questionsArray[numberOfQuestions].question;
+        versionA.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerA;
+        versionB.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerB;
+        versionC.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerC;
+        versionD.innerHTML = dataFromJson.questionsArray[numberOfQuestions].answerD;
+      } else {
+        var resultInfo = document.createElement("div");
+        resultInfo.classList.add("resultInfo");
+        body.appendChild(resultInfo);
+        var restartGameWarning = document.createElement("h2");
+        restartGameWarning.classList.add("restartGameWarning");
+        var restartGameText = document.createElement("p");
+        restartGameText.classList.add("restartGameText");
+        var restartGameBtn = document.createElement("a");
+        restartGameBtn.classList.add("restartGameBtn");
+        resultInfo.appendChild(restartGameWarning);
+        resultInfo.appendChild(restartGameText);
+        resultInfo.appendChild(restartGameBtn);
+        restartGameWarning.innerHTML = "Təşəkkürlər! Oyun Bitdi";
+        restartGameText.innerHTML = `Doğru cavabların sayı ${pointTrue} / ${dataFromJson.questionsArray.length} `;
+        restartGameBtn.innerHTML = "Yenidən Başla";
+
+        restartGameBtn.setAttribute("href", "index.html");
+
+        container.style.filter = "blur(50px)";
+        infoTotal.style.filter = "blur(10px)";
+      }
+    }
+  });
 }
