@@ -1,86 +1,143 @@
 {
   "questionsArray": [
     {
-      "question": "Osmanlı torunlarının daimi məkanı hansıdır?",
-      "answerA": "Golden",
-      "answerB": "Bizans",
-      "answerC": "50 Qəpik",
-      "answerD": "Şirin Çay",
-      "answer": "Golden"
+      "question": "Türkiyənin paytaxtı?",
+      "answerA": "İstanbul",
+      "answerB": "Düşənbə",
+      "answerC": "Ankara",
+      "answerD": "İzmir",
+      "answer": "Ankara"
     },
     {
-      "question": "Şahların ən çox sevdiyi oyun?",
-      "answerA": "Nərd",
-      "answerB": "Playstation",
-      "answerC": "Damino",
-      "answerD": "Okey",
-      "answer": "Damino"
-    },
-
-    {
-      "question": "Rövşən damino oynayarkən əlində hansı daşın qoşasını öldürmüşdür.",
-      "answerA": "Altı qoşa",
-      "answerB": "İki qoşa",
-      "answerC": "Ağ qoşa",
-      "answerD": "Dörd qoşa",
-      "answer": "Ağ qoşa"
+      "question": "Bəhreynin paytaxtı?",
+      "answerA": "Dəkkə",
+      "answerB": "Sofiya",
+      "answerC": "Manama",
+      "answerD": "Hamilton",
+      "answer": "Manama"
     },
 
     {
-      "question": "Aşağıdakılardan hansı Elçin imranlıya məxsusdur?",
-      "answerA": "Hündürboy olmaq",
-      "answerB": "Fit olmaq",
-      "answerC": "Liliput olmaq",
-      "answerD": "Uzun saçlı olmaq",
-      "answer": "Liliput olmaq"
+      "question": "Belçikanın paytaxtı?",
+      "answerA": "Belmopan",
+      "answerB": "Brüssel",
+      "answerC": "Minsk",
+      "answerD": "Brictaun",
+      "answer": "Brüssel"
     },
     {
-      "question": "Sahlar damino oynayarkən ən çox işlətdiyi söz?",
-      "answerA": "Oyna görək",
-      "answerB": "Ayə öyün tiyilsin",
-      "answerC": "Qazlıyacıyıq",
-      "answerD": "Sxoy verək",
-      "answer": "Ayə öyün tiyilsin"
+      "question": "Botsvananın paytaxtı?",
+      "answerA": "Gitega",
+      "answerB": "Abu-Dabi",
+      "answerC": "Nassau",
+      "answerD": "Qaborone",
+      "answer": "Qaborone"
     },
     {
-      "question": "Rauf ne satir?",
-      "answerA": "Ayaqqabi",
-      "answerB": "Meyvə-tərəvəz",
-      "answerC": "Beton",
-      "answerD": "Masin",
-      "answer": "Beton"
+      "question": "Almaniyann paytaxtı?",
+      "answerA": "Berlin",
+      "answerB": "Vyana",
+      "answerC": "Moskva",
+      "answerD": "Tirana",
+      "answer": "Berlin"
+    },
+
+    {
+      "question": "Çilinin paytaxtı?",
+      "answerA": "Cibuti",
+      "answerB": "Santyaqo",
+      "answerC": "Praqa",
+      "answerD": "Kopenhagen",
+      "answer": "Santyaqo"
     },
     {
-      "question": "Elçin əvvəl nə işlə məşğul olub?",
-      "answerA": "Maklerlik edib",
-      "answerB": "Satıcı",
-      "answerC": "Şobə müdürü",
-      "answerD": "Fəhlə",
-      "answer": "Maklerlik edib"
+      "question": "Çexiyanın paytaxtı?",
+      "answerA": "Seul",
+      "answerB": "Cəbəli-Tariq",
+      "answerC": "Praqa",
+      "answerD": "Pekin",
+      "answer": "Praqa"
     },
     {
-      "question": "Rövşən haralıdır?",
-      "answerA": "Ağdaş",
-      "answerB": "Yeraz",
-      "answerC": "Lənkəran",
-      "answerD": "Bakı",
-      "answer": "Yeraz"
+      "question": "Efiopiyanın paytaxtı?",
+      "answerA": "Malabo",
+      "answerB": "Tallin",
+      "answerC": "Əddis-Əbəbə",
+      "answerD": "Asmera",
+      "answer": "Əddis-Əbəbə"
     },
     {
-      "question": "Alikin yola getmədiyi dostu?",
-      "answerA": "Sahlar",
-      "answerB": "Rauf",
-      "answerC": "Rövşən",
-      "answerD": "Elçin",
-      "answer": "Elçin"
+      "question": "Danimarkanın paytaxtı?",
+      "answerA": "Cuba",
+      "answerB": "Sent Helier",
+      "answerC": "Pretoriya",
+      "answerD": "Kopenhagen",
+      "answer": "Kopenhagen"
     },
     {
-      "question": "Rauf haralıdır?",
-      "answerA": "Ağdam",
-      "answerB": "Ağdaş",
-      "answerC": "Masallı",
-      "answerD": "Şamaxı",
-      "answer": "Ağdam"
+      "question": "Ficinin paytaxtı?",
+      "answerA": "Ramallah",
+      "answerB": "Torshavn",
+      "answerC": "Suva",
+      "answerD": "Helsinki",
+      "answer": "Suva"
+    },
+    {
+      "question": "Fransanın paytaxtı?",
+      "answerA": "Paris",
+      "answerB": "Honkonq",
+      "answerC": "Dehli",
+      "answerD": "Priştina",
+      "answer": "Paris"
+    },
+    {
+      "question": "Haitinin paytaxtı?",
+      "answerA": "Port-o-Prins",
+      "answerB": "Amman",
+      "answerC": "Cakarta",
+      "answerD": "Tequsiqalpa",
+      "answer": "Port-o-Prins"
+    },
+    {
+      "question": "Kambocanın paytaxtı?",
+      "answerA": "Avarua",
+      "answerB": "Pnompen",
+      "answerC": "Kinşasa",
+      "answerD": "Corctaun",
+      "answer": "Pnompen"
+    },
+
+    {
+      "question": "Portuqaliyanın paytaxtı?",
+      "answerA": "Panama",
+      "answerB": "Varşava",
+      "answerC": "Lissabon",
+      "answerD": "Lima",
+      "answer": "Lissabon"
+    },
+    {
+      "question": "Komor Adalarının paytaxtı?",
+      "answerA": "Moroni",
+      "answerB": "Brazzavil",
+      "answerC": "Ottava",
+      "answerD": "Boqota",
+      "answer": "Moroni"
+    },
+    {
+      "question": "Kiprin paytaxtı?",
+      "answerA": "Yamusukro",
+      "answerB": "Cənubi Tarava",
+      "answerC": "Küveyt",
+      "answerD": "Nikosiya",
+      "answer": "Nikosiya"
+    },
+    {
+      "question": "Lesotunun paytaxtı?",
+      "answerA": "Maseru",
+      "answerB": "Vaduts",
+      "answerC": "Vilnüs",
+      "answerD": "Riqa",
+      "answer": "Maseru"
     }
   ]
 }
